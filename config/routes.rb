@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get "sessions/new"
-  scope "(:locale)",locale: /en|vi/ do
+  scope "(:locale)", locale: /#{I18n.available_locales.join('|')}/ do
     root "static_pages#home"
 
     get "/help", to: "static_pages#help"
@@ -11,5 +10,5 @@ Rails.application.routes.draw do
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
     resources :users
-  end
+    end
 end

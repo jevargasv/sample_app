@@ -33,11 +33,19 @@ en:
       login: "Login"
       sign_up: "Sign up now!"
       new_user: "New User?"
-
+      remember: "Remember me on this computer"
     create:
       warning: "Invalid email/password combination"
 
   users:
+    index:
+      title: All Users
+      header: "All users"
+
+    user:
+      delete: "Delete"
+      confirm: "You Sure?"
+
     new:
       title: "Sign up"
       header: "Sign up"
@@ -49,9 +57,34 @@ en:
       password_confirmation: "password_confirmation"
       confirm: "Confirmation"
 
+    edit:
+      title: "Edit user"
+      header: "Update your profile"
+      change: Change Avatar
+      name: "name"
+      email: "email"
+      password: "password"
+      password_confirmation: "password_confirmation"
+      save: "Save Change"
+      danger: "Not found id to edit"
+
     create:
       success: "Welcome to the Sample App!"
-      error: "Error !!!"
+      danger: "Error !!!"
+
+    update:
+      success: "Profile updated"
+      danger: "Update failed successfully"
+
+    destroy:
+      success: "User deleted"
+      danger: "Not found id to delete"
+
+    logged_in_user:
+      danger: "Please log in."
+
+    load_user:
+      danger: "Not found"
 
   static_pages:
     home:
