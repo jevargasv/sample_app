@@ -1,0 +1,10 @@
+<% provide:title, t(".title") %>
+<h1><%= t(".header") %></h1>
+
+<%= will_paginate %>
+<ul class="users">
+  <% @users.each do |user| %>
+    <%= render partial: "user", locals: {user: user} %>
+  <% end %>
+</ul>
+<%= will_paginate %>

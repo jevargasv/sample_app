@@ -7,6 +7,7 @@ link:
   screencast: "https://screencasts.railstutorial.org/"
   rails: "https://rubyonrails.org"
   author: "https//www.michaelhartl.com"
+  gravatar: "http://gravatar.com/emails"
 validate:
   name_length: 50
   email_length: 255
@@ -14,3 +15,5 @@ validate:
   regex_email: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 helper:
   size_gravatar: 80
+  size_gravatar_user: 50
+  remember_status: 1
